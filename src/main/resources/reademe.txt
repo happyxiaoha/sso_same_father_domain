@@ -7,3 +7,12 @@ C:\Windows\System32\drivers\etc下添加三个域名
 sso: http://sso.x.com/sso/checkCookie
 demo1: http://demo1.x.com/demo1/main
 demo2: http://demo2.x.com/demo2/main
+===========================================
+完全同域，设置cookie就好
+
+===========================================
+
+完全跨域
+
+1. 集成sso的应用需要暴露在本域添加Cookie的接口
+2. sso登录成功的时候，在sso的login.html中使用iframe，调用所有集成sso的添加Cookie的接口。
