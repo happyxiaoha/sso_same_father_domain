@@ -1,0 +1,9 @@
+同一个父域名下面
+C:\Windows\System32\drivers\etc下添加三个域名
+127.0.0.1 demo1.x.com
+127.0.0.1 demo2.x.com
+127.0.0.1 sso.x.com
+
+sso: http://sso.x.com/sso/checkCookie
+demo1: http://demo1.x.com/demo1/main
+demo2: http://demo2.x.com/demo2/main

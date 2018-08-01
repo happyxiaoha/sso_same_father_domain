@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"/>
+	<title>单点登录</title>
+</head>
+<body>
+<form action="/sso/login" method="get">
+	<span>用户名：</span><input type="text" name="username"/>
+	<span>密码：</span><input type="password" name="password"/>
+	<input type="hidden" name="gotoUrl" th:value="${gotoUrl}"/>
+	<input type="submit" value="登录"/>
+</form>
+</body>
+</html>
